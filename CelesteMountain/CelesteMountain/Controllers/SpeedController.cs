@@ -4,31 +4,17 @@ using System.Diagnostics;
 
 namespace CelesteMountain.Controllers
 {
-    public class HomeController : Controller
+    public class SpeedController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<SpeedController> _logger;
+
+        public SpeedController(ILogger<SpeedController> logger)
         {
             _logger = logger;
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult History()
-        {
-            return View();
-        }
-
-        public IActionResult Stories()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }

@@ -4,11 +4,11 @@ using System.Diagnostics;
 
 namespace CelesteMountain.Controllers
 {
-    public class HomeController : Controller
+    public class SourceController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<SourceController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public SourceController(ILogger<SourceController> logger)
         {
             _logger = logger;
         }
@@ -17,18 +17,11 @@ namespace CelesteMountain.Controllers
         {
             return View();
         }
-
-        public IActionResult History()
+        public IActionResult FanSites()
         {
             return View();
         }
-
-        public IActionResult Stories()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
+        public IActionResult News()
         {
             return View();
         }
@@ -38,5 +31,6 @@ namespace CelesteMountain.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

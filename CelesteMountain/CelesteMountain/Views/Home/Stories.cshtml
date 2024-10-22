@@ -1,11 +1,9 @@
-﻿@model CelesteMountain.Models.StoryPost
+﻿@model List<CelesteMountain.Models.StoryPost>
 @{
     ViewData["Title"] = "Stories";
 }
 
-<h1 class="text-center">Stories Forum</h1>
-
-<h1 class="text-center fw-bolder">Stories</h1>
+<h1 class="text-center fw-bolder">Stories Forum</h1>
 
 @foreach (var story in Model)
 {
@@ -18,5 +16,5 @@
 }
 
 <div class="container mt-lg-5">
-    <a href="@Url.Action("Story", "Home")" class="btn btn-warning">Contribute Your Story</a>
+    <a href="@Url.Action("PostStory", "Home")" class="btn btn-info">Contribute Your Story</a>
 </div>

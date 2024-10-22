@@ -39,7 +39,7 @@ namespace CelesteMountain.Controllers
 
         public IActionResult Stories()
         {
-            return View();
+            return View(CurrentStories);
         }
 
         public IActionResult PostStory()
